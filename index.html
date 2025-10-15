@@ -3,149 +3,535 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Auto Vilaseca Ismael (AVI) - Compra y Venta de Coches</title>
+    <title>Auto Vilaseca Ismael - Concesionario Premium en Vilaseca</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="imagenes/logo.webp" type="image/webp">
     
-    <meta name="description" content="Compra y venta de coches seminuevos en Vilaseca. Vehículos seleccionados, revisados y garantizados.">
-    <meta name="keywords" content="coches ocasión, seminuevos, compra venta coches, Auto Vilaseca Ismael">
-    <meta property="og:title" content="Auto Vilaseca Ismael (AVI) - Compra y Venta de Coches">
-    <meta property="og:description" content="Encuentra tu coche perfecto entre nuestra selección de vehículos revisados y garantizados.">
+    <meta name="description" content="Concesionario premium en Vilaseca. Compra y venta de coches seminuevos seleccionados, revisados y garantizados. Mejores precios y financiación.">
+    <meta name="keywords" content="coches ocasión Vilaseca, concesionario Tarragona, comprar coche, vender coche, Auto Vilaseca Ismael">
+    <meta property="og:title" content="Auto Vilaseca Ismael - Concesionario Premium">
+    <meta property="og:description" content="Vehículos seleccionados, revisados y garantizados en Vilaseca. Tu concesionario de confianza.">
     <meta property="og:image" content="imagenes/hero/hero-bg.jpg">
-    <meta property="og:url" content="https://auto-vilaseca-ismael.com">
+    <meta property="og:url" content="https://autovilasecaismael.com">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Premium -->
     <header class="header">
         <div class="container">
             <nav class="nav">
                 <a href="index.html" class="logo">
-                    <img src="imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                    <img src="imagenes/logo.webp" alt="Auto Vilaseca Ismael - Concesionario Premium">
+                    <span class="logo-text">Auto Vilaseca Ismael</span>
                 </a>
                 
                 <ul class="nav-menu">
-                    <li><a href="index.html" class="active">Inicio</a></li>
-                    <li><a href="pages/catalogo.html">Catálogo</a></li>
-                    <li><a href="pages/ubicacion.html">Ubicación</a></li>
-                    <li><a href="pages/contacto.html">Contacto</a></li>
-                    <li><a href="pages/vender-coche.html" class="btn-sell">Vender coche</a></li>
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="pages/catalogo.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="pages/ubicacion.html" class="nav-link">Ubicación</a></li>
+                    <li><a href="pages/contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="pages/vender-coche.html" class="btn-sell">
+                        <i class="fas fa-euro-sign"></i>
+                        Vender coche
+                    </a></li>
                 </ul>
                 
-                <div class="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="nav-actions">
+                    <a href="tel:+34624334958" class="nav-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>624 33 49 58</span>
+                    </a>
                 </div>
+                
+                <button class="nav-toggle" aria-label="Menú móvil">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Hero Section Premium -->
     <section class="hero">
-        <div class="hero-overlay"></div>
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
+        
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Encuentra tu coche perfecto</h1>
-                <p class="hero-subtitle">Vehículos de ocasión seleccionados, revisados y garantizados en Vilaseca</p>
+                <div class="hero-badge">
+                    <span>⭐ Compra&Venta de Confianza</span>
+                </div>
                 
-                <div class="search-bar">
-                    <input type="text" placeholder="Buscar por marca, modelo..." class="search-input">
-                    <button class="search-btn">
+                <h1 class="hero-title">
+                    Encuentra tu 
+                    <span class="hero-highlight">coche perfecto</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Vehículos seleccionados, revisados y con garantía. 
+                    <strong>Compra con total tranquilidad en Vilaseca</strong>
+                </p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">14</span>
+                        <span class="stat-label">Vehículos disponibles</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Meses garantía</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Revisados</span>
+                    </div>
+                </div>
+
+                <div class="search-box-hero">
+                    <div class="search-icon">
                         <i class="fas fa-search"></i>
+                    </div>
+                    <input type="text" class="search-input" placeholder="Buscar por marca, modelo, precio...">
+                    <button class="search-btn">
+                        <i class="fas fa-arrow-right"></i>
                     </button>
                 </div>
                 
-                <div class="brands-quick">
-                    <span>Marcas populares:</span>
-                    <div class="brands-list">
-                        <a href="#" class="brand-tag">Audi</a>
-                        <a href="#" class="brand-tag">BMW</a>
-                        <a href="#" class="brand-tag">Mercedes</a>
-                        <a href="#" class="brand-tag">Volkswagen</a>
+                <div class="brands-shortcut">
+                    <span class="brands-label">Marcas populares:</span>
+                    <div class="brands-grid">
+                        <a href="pages/catalogo.html?brand=audi" class="brand-tag">
+                            <i class="fas fa-car"></i>
+                            Audi
+                        </a>
+                        <a href="pages/catalogo.html?brand=bmw" class="brand-tag">
+                            <i class="fas fa-car"></i>
+                            BMW
+                        </a>
+                        <a href="pages/catalogo.html?brand=volkswagen" class="brand-tag">
+                            <i class="fas fa-car"></i>
+                            Volkswagen
+                        </a>
+                        <a href="pages/catalogo.html?brand=seat" class="brand-tag">
+                            <i class="fas fa-car"></i>
+                            Seat
+                        </a>
+                        <a href="pages/catalogo.html?brand=opel" class="brand-tag">
+                            <i class="fas fa-car"></i>
+                            Opel
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        
+        <div class="hero-scroll">
+            <div class="scroll-indicator">
+                <span>Descubre más</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Features Section Premium -->
     <section class="features">
         <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegirnos?</h2>
+                <p class="section-subtitle">Tu tranquilidad es nuestra prioridad</p>
+            </div>
+            
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Garantía incluida</h3>
-                    <p>Todos nuestros vehículos incluyen garantía y pasan rigurosas revisiones</p>
+                    <h3>Garantía Incluida</h3>
+                    <p>Todos nuestros vehículos incluyen <strong>12 meses de garantía</strong> y pasan rigurosas revisiones de 150 puntos</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-search"></i>
                     </div>
-                    <h3>Revisados</h3>
-                    <p>Inspección completa de 150 puntos en cada vehículo</p>
+                    <h3>Revisados Expertamente</h3>
+                    <p>Inspección completa mecánica, eléctrica y de carrocería. <strong>Certificado de calidad</strong> en cada vehículo</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-euro-sign"></i>
+                        <i class="fas fa-tag"></i>
                     </div>
-                    <h3>Mejor precio</h3>
-                    <p>Precios competitivos y financiación disponible</p>
+                    <h3>Mejor Precio Garantizado</h3>
+                    <p>Precios competitivos y <strong>financiación a medida</strong>. Te ayudamos a encontrar la mejor opción</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-car"></i>
+                        <i class="fas fa-bolt"></i>
                     </div>
-                    <h3>Entrega inmediata</h3>
-                    <p>Vehículos listos para entrega con todos los papeles</p>
+                    <h3>Entrega Inmediata</h3>
+                    <p>Vehículos listos para entrega con <strong>todos los papeles en regla</strong> y cambio de nombre incluido</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>Variedad de Modelos</h3>
+                    <p>Amplia selección de vehículos de diferentes marcas y modelos para satisfacer tus necesidades</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Asesoramiento experto y trato cercano. Estamos aquí para ayudarte en cada paso del proceso</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Featured Cars Section Premium -->
+    <section class="featured-cars">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Vehículos Destacados</h2>
+                <p class="section-subtitle">Nuestra selección de coches más populares</p>
+            </div>
+            
+            <div class="cars-grid">
+                <!-- Audi SQ5 Destacado -->
+                <div class="car-card" data-marca="audi" data-year="2014" data-km="172000" data-price="22900" data-combustible="diesel" data-destacado="true" data-certificado="true">
+                    <div class="car-badges">
+                        <div class="badge featured">⭐ Destacado</div>
+                        <div class="badge certified">🛡️ Certificado</div>
+                    </div>
+                    
+                    <div class="car-image-container">
+                        <img src="imagenes/coches/audi-sq5/1.jpeg" alt="Audi SQ5 3.0 TDI Quattro" class="car-image" onerror="this.src='imagenes/placeholder-car.jpg'">
+                        <div class="car-overlay">
+                            <button class="quick-view">
+                                <i class="fas fa-eye"></i>
+                                Vista rápida
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="car-info">
+                        <h3 class="car-title">Audi SQ5</h3>
+                        <p class="car-subtitle">3.0 TDI Quattro S tronic</p>
+                        
+                        <div class="car-details">
+                            <div class="car-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>2014</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>172.000 km</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-cog"></i>
+                                <span>Automático</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-price-section">
+                            <div class="car-price">23.500 €</div>
+                            <div class="price-includes">Incluye garantía + cambio nombre</div>
+                        </div>
+                        
+                        <div class="car-actions">
+                            <a href="coches/audi-sq5.html" class="btn-primary">
+                                <i class="fas fa-info-circle"></i>
+                                Ver detalles
+                            </a>
+                            <a href="https://wa.me/34624334958?text=Hola, estoy interesado en el Audi SQ5 de 22.900€" class="btn-secondary" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Volkswagen Tiguan -->
+                <div class="car-card" data-marca="volkswagen" data-year="2017" data-km="150000" data-price="27000" data-combustible="diesel" data-destacado="true" data-certificado="false">
+                    <div class="car-badges">
+                        <div class="badge featured">⭐ Destacado</div>
+                    </div>
+                    
+                    <div class="car-image-container">
+                        <img src="imagenes/coches/volkswagen-tiguan/1.png" alt="Volkswagen Tiguan 2.0 TDI R-Line" class="car-image" onerror="this.src='imagenes/placeholder-car.jpg'">
+                        <div class="car-overlay">
+                            <button class="quick-view">
+                                <i class="fas fa-eye"></i>
+                                Vista rápida
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="car-info">
+                        <h3 class="car-title">Volkswagen Tiguan</h3>
+                        <p class="car-subtitle">2.0 TDI R-Line 4MOTION</p>
+                        
+                        <div class="car-details">
+                            <div class="car-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>2018</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>155.000 km</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-cog"></i>
+                                <span>Automático</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-price-section">
+                            <div class="car-price">25.500 €</div>
+                            <div class="price-includes">Incluye garantía + cambio nombre</div>
+                        </div>
+                        
+                        <div class="car-actions">
+                            <a href="coches/volkswagen-tiguan.html" class="btn-primary">
+                                <i class="fas fa-info-circle"></i>
+                                Ver detalles
+                            </a>
+                            <a href="https://wa.me/34624334958?text=Hola, estoy interesado en el Volkswagen Tiguan de 27.000€" class="btn-secondary" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Peugeot 308 Certificado -->
+                <div class="car-card" data-marca="peugeot" data-year="2019" data-km="95000" data-price="16500" data-combustible="diesel" data-destacado="false" data-certificado="true">
+                    <div class="car-badges">
+                        <div class="badge certified">🛡️ Certificado</div>
+                    </div>
+                    
+                    <div class="car-image-container">
+                        <img src="imagenes/coches/peugeot-308/1.jpeg" alt="Peugeot 308 1.6 BlueHDI" class="car-image" onerror="this.src='imagenes/placeholder-car.jpg'">
+                        <div class="car-overlay">
+                            <button class="quick-view">
+                                <i class="fas fa-eye"></i>
+                                Vista rápida
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="car-info">
+                        <h3 class="car-title">Peugeot 308</h3>
+                        <p class="car-subtitle">1.6 BlueHDI Allure</p>
+                        
+                        <div class="car-details">
+                            <div class="car-detail">
+                                <i class="fas fa-calendar"></i>
+                                <span>2019</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-tachometer-alt"></i>
+                                <span>198.000 km</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-gas-pump"></i>
+                                <span>Diésel</span>
+                            </div>
+                            <div class="car-detail">
+                                <i class="fas fa-cog"></i>
+                                <span>Automático</span>
+                            </div>
+                        </div>
+                        
+                        <div class="car-price-section">
+                            <div class="car-price">8.200 €</div>
+                            <div class="price-includes">Incluye garantía + cambio nombre</div>
+                        </div>
+                        
+                        <div class="car-actions">
+                            <a href="coches/peugeot-308.html" class="btn-primary">
+                                <i class="fas fa-info-circle"></i>
+                                Ver detalles
+                            </a>
+                            <a href="https://wa.me/34624334958?text=Hola, estoy interesado en el Peugeot 308 de 16.500€" class="btn-secondary" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                WhatsApp
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-cta">
+                <a href="pages/catalogo.html" class="btn-primary large">
+                    <i class="fas fa-car"></i>
+                    Ver todos los vehículos
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section Premium -->
+    <section class="cta-premium">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">¿No encuentras lo que buscas?</h2>
+                <p class="cta-subtitle">Te ayudamos a encontrar el coche perfecto para ti</p>
+                
+                <div class="cta-features">
+                    <div class="cta-feature">
+                        <i class="fas fa-search"></i>
+                        <span>Búsqueda personalizada</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-car-side"></i>
+                        <span>Prueba de conducción</span>
+                    </div>
+                    <div class="cta-feature">
+                        <i class="fas fa-handshake"></i>
+                        <span>Asesoramiento experto</span>
+                    </div>
+                </div>
+                
+                <div class="cta-buttons">
+                    <a href="tel:+34624334958" class="btn-primary large">
+                        <i class="fas fa-phone"></i>
+                        Llamar ahora
+                    </a>
+                    <a href="https://wa.me/34624334958" class="btn-secondary large" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Premium -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Auto Vilaseca Ismael</h3>
-                    <p>Tu concesionario de confianza en Vilaseca. Especialistas en coches de ocasión y seminuevos.</p>
+                    <div class="footer-logo">
+                        <img src="imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                        <h3>Auto Vilaseca Ismael</h3>
+                    </div>
+                    <p class="footer-description">
+                        Tu concesionario de confianza en Vilaseca. Especialistas en coches de ocasión y seminuevos seleccionados. Calidad, garantía y el mejor servicio.
+                    </p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/34624334958" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:+34624334958" class="social-link" title="Llamar">
+                            <i class="fas fa-phone"></i>
+                        </a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Contacto</h3>
+                    <h3>Contacto Directo</h3>
                     <div class="contact-info">
-                        <p><i class="fas fa-map-marker-alt"></i> Carrer de Masricard, 14, 43480 Vilaseca</p>
-                        <p><i class="fas fa-phone"></i> +34 624 33 49 58</p>
-                        <p><i class="fas fa-envelope"></i> autoismaelsl@gmail.com</p>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visítanos</strong>
+                                <span>Carrer de Masricard, 14<br>43480 Vilaseca, Tarragona</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Llámanos</strong>
+                                <a href="tel:+34624334958">+34 624 33 49 58</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:autoismaelsl@gmail.com">autoismaelsl@gmail.com</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h3>Horarios</h3>
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="pages/catalogo.html"><i class="fas fa-chevron-right"></i> Catálogo completo</a></li>
+                        <li><a href="pages/ubicacion.html"><i class="fas fa-chevron-right"></i> Cómo llegar</a></li>
+                        <li><a href="pages/contacto.html"><i class="fas fa-chevron-right"></i> Contactar</a></li>
+                        <li><a href="pages/vender-coche.html"><i class="fas fa-chevron-right"></i> Vender mi coche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horario de Atención</h3>
                     <div class="hours-info">
-                        <p>Lunes - Viernes: 9:00 - 19:00</p>
-                        <p>Sábados: 10:00 - 14:00</p>
-                        <p>Domingos: Cerrado</p>
+                        <div class="hour-item">
+                            <span>Lunes - Viernes</span>
+                            <span>9:00 - 19:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Sábados</span>
+                            <span>10:00 - 14:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Domingos</span>
+                            <span>Cerrado</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-cta">
+                        <a href="pages/contacto.html" class="btn-primary small">
+                            <i class="fas fa-calendar"></i>
+                            Pedir cita
+                        </a>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Auto Vilaseca Ismael. Todos los derechos reservados.</p>
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Auto Vilaseca Ismael. Todos los derechos reservados.</p>
+                    <div class="footer-legals">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34624334958" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="js/main.js"></script>
 </body>
