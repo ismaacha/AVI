@@ -1,0 +1,377 @@
+/* ===== CATALOG STYLES ===== */
+.catalog-main {
+    padding: 120px 0 50px;
+    background: var(--bg-light);
+    min-height: 100vh;
+}
+
+.catalog-header {
+    margin-bottom: 2rem;
+}
+
+.catalog-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.catalog-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.vehicles-count {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.sort-options select {
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--bg-white);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+}
+
+.catalog-layout {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+/* ===== FILTERS SIDEBAR ===== */
+.filters-sidebar {
+    background: var(--bg-white);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 120px;
+}
+
+.filters-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filters-header h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+}
+
+.clear-filters {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: var(--transition);
+}
+
+.clear-filters:hover {
+    color: var(--primary-dark);
+}
+
+.filter-group {
+    margin-bottom: 1.5rem;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    font-size: 0.95rem;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background: var(--bg-white);
+    color: var(--text-dark);
+    font-size: 0.9rem;
+    transition: var(--transition);
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.range-inputs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.range-inputs input {
+    flex: 1;
+    padding: 0.8rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.range-inputs input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+
+.range-inputs span {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.filter-tags {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.filter-tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: var(--border-radius);
+    transition: var(--transition);
+}
+
+.filter-tag:hover {
+    background: var(--bg-light);
+}
+
+.filter-tag input {
+    margin: 0;
+}
+
+.filter-tag span {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+/* ===== VEHICLES GRID ===== */
+.vehicles-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.vehicle-card {
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    position: relative;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.vehicle-badges {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    z-index: 2;
+}
+
+.badge {
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge.certified {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.badge.featured {
+    background: var(--accent-color);
+    color: white;
+}
+
+.badge.sold {
+    background: #D32F2F;
+    color: white;
+}
+
+.vehicle-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.vehicle-info {
+    padding: 1.5rem;
+}
+
+.vehicle-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.vehicle-subtitle {
+    font-size: 1rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.vehicle-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.vehicle-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.vehicle-detail i {
+    width: 16px;
+    color: var(--primary-color);
+}
+
+.vehicle-price {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.vehicle-actions {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.btn-primary,
+.btn-secondary {
+    flex: 1;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    font-weight: 500;
+    cursor: pointer;
+    transition: var(--transition);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+}
+
+.btn-secondary {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background: var(--border-color);
+}
+
+.load-more {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.load-more .btn-secondary {
+    padding: 1rem 2rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 1024px) {
+    .catalog-layout {
+        grid-template-columns: 280px 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .filters-sidebar {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .catalog-stats {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .vehicle-details {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-main {
+        padding: 100px 0 30px;
+    }
+
+    .catalog-header h1 {
+        font-size: 2rem;
+    }
+
+    .vehicle-actions {
+        flex-direction: column;
+    }
+
+    .filters-sidebar {
+        padding: 1rem;
+    }
+}

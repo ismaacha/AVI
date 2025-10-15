@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Coches - Auto Vilaseca Ismael</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../imagenes/logo.webp" type="image/webp">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="catalogo.html" class="active">Catálogo</a></li>
+                    <li><a href="ubicacion.html">Ubicación</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="vender-coche.html" class="btn-sell">Vender coche</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="catalog-main">
+        <div class="container">
+            <div class="catalog-header">
+                <h1>Nuestro Catálogo</h1>
+                <div class="catalog-stats">
+                    <span class="vehicles-count">14 vehículos disponibles</span>
+                    <div class="sort-options">
+                        <select id="sort-select">
+                            <option value="recent">Más recientes</option>
+                            <option value="price-low">Precio: menor a mayor</option>
+                            <option value="price-high">Precio: mayor a menor</option>
+                            <option value="km-low">Kilometraje: menor a mayor</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="catalog-layout">
+                <aside class="filters-sidebar">
+                    <div class="filters-header">
+                        <h3>Filtros</h3>
+                        <button class="clear-filters" id="clear-filters">
+                            <i class="fas fa-times"></i> Limpiar
+                        </button>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Marca</label>
+                        <select id="filter-marca">
+                            <option value="">Todas las marcas</option>
+                            <option value="audi">Audi</option>
+                            <option value="volkswagen">Volkswagen</option>
+                            <option value="opel">Opel</option>
+                            <option value="seat">Seat</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="peugeot">Peugeot</option>
+                            <option value="citroen">Citroën</option>
+                            <option value="renault">Renault</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Precio</label>
+                        <div class="range-inputs">
+                            <input type="number" id="price-min" placeholder="Mín" min="0">
+                            <span>-</span>
+                            <input type="number" id="price-max" placeholder="Máx" min="0">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Año</label>
+                        <div class="range-inputs">
+                            <input type="number" id="year-min" placeholder="Desde" min="1990" max="2024">
+                            <span>-</span>
+                            <input type="number" id="year-max" placeholder="Hasta" min="1990" max="2024">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Kilometraje</label>
+                        <div class="range-inputs">
+                            <input type="number" id="km-min" placeholder="Mín km">
+                            <span>-</span>
+                            <input type="number" id="km-max" placeholder="Máx km">
+                        </div>
+                    </div>
+
+                    <div class="filter-group">
+                        <label>Combustible</label>
+                        <select id="filter-combustible">
+                            <option value="">Todos</option>
+                            <option value="diesel">Diésel</option>
+                            <option value="gasolina">Gasolina</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-tags">
+                        <label class="filter-tag">
+                            <input type="checkbox" id="filter-certificado">
+                            <span>Certificado</span>
+                        </label>
+                        <label class="filter-tag">
+                            <input type="checkbox" id="filter-destacado">
+                            <span>Destacado</span>
+                        </label>
+                    </div>
+                </aside>
+
+                <section class="vehicles-grid">
+                    <div class="grid-container" id="vehicles-grid">
+                        <!-- Audi SQ5 -->
+                        <div class="vehicle-card" data-marca="audi" data-year="2014" data-km="172000" data-price="22900" data-combustible="diesel" data-destacado="true" data-certificado="true">
+                            <div class="vehicle-badges">
+                                <div class="badge featured">Destacado</div>
+                                <div class="badge certified">Certificado</div>
+                            </div>
+                            <img src="../imagenes/coches/audi-sq5/1.jpeg" alt="Audi SQ5" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Audi SQ5</h3>
+                                <p class="vehicle-subtitle">3.0 TDI Quattro</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2014</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>172.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Automático</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">22.900 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/audi-sq5.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=audi-sq5" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Volkswagen Tiguan -->
+                        <div class="vehicle-card" data-marca="volkswagen" data-year="2017" data-km="150000" data-price="27000" data-combustible="diesel" data-destacado="true" data-certificado="false">
+                            <div class="vehicle-badges">
+                                <div class="badge featured">Destacado</div>
+                            </div>
+                            <img src="../imagenes/coches/volkswagen-tiguan/1.png" alt="Volkswagen Tiguan" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Volkswagen Tiguan</h3>
+                                <p class="vehicle-subtitle">2.0 TDI R-Line</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2017</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>150.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Automático</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">27.000 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/volkswagen-tiguan.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=volkswagen-tiguan" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Volkswagen T-Roc -->
+                        <div class="vehicle-card" data-marca="volkswagen" data-year="2020" data-km="180000" data-price="23300" data-combustible="diesel" data-destacado="false" data-certificado="true">
+                            <div class="vehicle-badges">
+                                <div class="badge certified">Certificado</div>
+                            </div>
+                            <img src="../imagenes/coches/volkswagen-troc/1.jpeg" alt="Volkswagen T-Roc" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Volkswagen T-Roc</h3>
+                                <p class="vehicle-subtitle">2.0 TDI Style</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>180.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">23.300 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/volkswagen-troc.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=volkswagen-troc" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opel Mokka X -->
+                        <div class="vehicle-card" data-marca="opel" data-year="2017" data-km="90000" data-price="15000" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/opel-mokka/1.webp" alt="Opel Mokka X" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Opel Mokka X</h3>
+                                <p class="vehicle-subtitle">1.7 CDTI</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2017</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>90.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">15.000 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/opel-mokka.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=opel-mokka" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Audi A3 S-line -->
+                        <div class="vehicle-card" data-marca="audi" data-year="2015" data-km="213000" data-price="17900" data-combustible="diesel" data-destacado="false" data-certificado="true">
+                            <div class="vehicle-badges">
+                                <div class="badge certified">Certificado</div>
+                            </div>
+                            <img src="../imagenes/coches/audi-a3-sline/1.jpeg" alt="Audi A3 S-line" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Audi A3 S-line</h3>
+                                <p class="vehicle-subtitle">2.0 TDI</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2015</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>213.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">17.900 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/audi-a3-sline.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=audi-a3-sline" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Audi A3 2016 -->
+                        <div class="vehicle-card" data-marca="audi" data-year="2016" data-km="120000" data-price="17900" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/audi-a3-2016/1.jpeg" alt="Audi A3" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Audi A3</h3>
+                                <p class="vehicle-subtitle">1.6 TDI</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2016</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>120.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">17.900 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/audi-a3-2016.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=audi-a3-2016" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Seat Leon -->
+                        <div class="vehicle-card" data-marca="seat" data-year="2013" data-km="197000" data-price="12500" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/seat-leon/1.webp" alt="Seat Leon" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Seat Leon</h3>
+                                <p class="vehicle-subtitle">2.0 TDI FR</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2013</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>197.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">12.500 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/seat-leon.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=seat-leon" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fiat Freemont -->
+                        <div class="vehicle-card" data-marca="fiat" data-year="2012" data-km="160000" data-price="11500" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/fiat-freemont/1.jpeg" alt="Fiat Freemont" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Fiat Freemont</h3>
+                                <p class="vehicle-subtitle">2.0 Multijet</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2012</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>160.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">11.500 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/fiat-freemont.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=fiat-freemont" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Peugeot 308 -->
+                        <div class="vehicle-card" data-marca="peugeot" data-year="2019" data-km="95000" data-price="16500" data-combustible="diesel" data-destacado="false" data-certificado="true">
+                            <div class="vehicle-badges">
+                                <div class="badge certified">Certificado</div>
+                            </div>
+                            <img src="../imagenes/coches/peugeot-308/1.jpeg" alt="Peugeot 308" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Peugeot 308</h3>
+                                <p class="vehicle-subtitle">1.6 BlueHDI</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2019</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>95.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">16.500 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/peugeot-308.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=peugeot-308" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Citroen C3 2004 -->
+                        <div class="vehicle-card" data-marca="citroen" data-year="2004" data-km="245000" data-price="2250" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/citroen-c3-2004/1.jpeg" alt="Citroen C3" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Citroen C3</h3>
+                                <p class="vehicle-subtitle">1.4 HDi</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2004</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>245.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">2.250 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/citroen-c3-2004.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=citroen-c3-2004" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Opel Movano -->
+                        <div class="vehicle-card" data-marca="opel" data-year="2020" data-km="213000" data-price="14000" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/opel-movano/1.jpeg" alt="Opel Movano" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Opel Movano</h3>
+                                <p class="vehicle-subtitle">2.3 Turbo Diesel</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2020</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>213.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">14.000 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/opel-movano.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=opel-movano" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Renault Master -->
+                        <div class="vehicle-card" data-marca="renault" data-year="2021" data-km="184000" data-price="16000" data-combustible="diesel" data-destacado="false" data-certificado="true">
+                            <div class="vehicle-badges">
+                                <div class="badge certified">Certificado</div>
+                            </div>
+                            <img src="../imagenes/coches/renault-master/1.jpeg" alt="Renault Master" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Renault Master</h3>
+                                <p class="vehicle-subtitle">2.3 dCi</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2021</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>184.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">16.000 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/renault-master.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=renault-master" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Fiat Ducato -->
+                        <div class="vehicle-card" data-marca="fiat" data-year="2015" data-km="195000" data-price="12500" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/fiat-ducato/1.jpeg" alt="Fiat Ducato" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Fiat Ducato</h3>
+                                <p class="vehicle-subtitle">2.3 Multijet</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2015</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>195.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">12.500 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/fiat-ducato.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=fiat-ducato" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Volkswagen Touran -->
+                        <div class="vehicle-card" data-marca="volkswagen" data-year="2012" data-km="169000" data-price="9000" data-combustible="diesel" data-destacado="false" data-certificado="false">
+                            <img src="../imagenes/coches/volkswagen-touran/1.jpeg" alt="Volkswagen Touran" class="vehicle-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                            <div class="vehicle-info">
+                                <h3 class="vehicle-title">Volkswagen Touran</h3>
+                                <p class="vehicle-subtitle">1.6 TDI</p>
+                                <div class="vehicle-details">
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-calendar"></i>
+                                        <span>2012</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                        <span>169.000 km</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-gas-pump"></i>
+                                        <span>Diésel</span>
+                                    </div>
+                                    <div class="vehicle-detail">
+                                        <i class="fas fa-cog"></i>
+                                        <span>Manual</span>
+                                    </div>
+                                </div>
+                                <div class="vehicle-price">9.000 €</div>
+                                <div class="vehicle-actions">
+                                    <a href="../coches/volkswagen-touran.html" class="btn-primary">Ver detalles</a>
+                                    <a href="contacto.html?car=volkswagen-touran" class="btn-secondary">Contactar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="load-more">
+                        <button id="load-more-btn" class="btn-secondary">
+                            <i class="fas fa-chevron-down"></i> Cargar más vehículos
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Auto Vilaseca Ismael</h3>
+                    <p>Tu concesionario de confianza en Vilaseca. Especialistas en coches de ocasión y seminuevos.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <div class="contact-info">
+                        <p><i class="fas fa-map-marker-alt"></i> Carrer de Masricard, 14, 43480 Vilaseca</p>
+                        <p><i class="fas fa-phone"></i> +34 624 33 49 58</p>
+                        <p><i class="fas fa-envelope"></i> autoismaelsl@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horarios</h3>
+                    <div class="hours-info">
+                        <p>Lunes - Viernes: 9:00 - 19:00</p>
+                        <p>Sábados: 10:00 - 14:00</p>
+                        <p>Domingos: Cerrado</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Auto Vilaseca Ismael. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/catalogo.js"></script>
+</body>
+</html>
