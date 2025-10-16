@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Auto Vilaseca Ismael</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="../imagenes/logo.webp" type="image/webp">
+    
+    <meta name="description" content="Contacta con Auto Vilaseca Ismael. WhatsApp: 624 33 49 58, Teléfono: 624 33 49 58, Instagram: @autovilasecaismael">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                    <span class="logo-text">Auto Vilaseca Ismael</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="catalogo.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="ubicacion.html" class="nav-link">Ubicación</a></li>                    
+                    <li><a href="sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                    <li><a href="vender-coche.html" class="btn-sell">
+                        <i class="fas fa-euro-sign"></i>
+                        Vender coche
+                    </a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="tel:+34624334958" class="nav-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>624 33 49 58</span>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Menú móvil">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contacto-main">
+        <!-- Hero Section con Partículas -->
+        <section class="contacto-hero">
+            <div class="particles-container" id="particles-js"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <br>
+                    <h1 class="hero-title">
+                        <span class="title-line">Estamos aquí</span>
+                        <span class="title-line highlight">para ayudarte</span>
+                    </h1>
+                    <p class="hero-subtitle">Múltiples formas de contactar, misma calidad de servicio</p>
+                    
+                    <div class="contact-badges">
+                        <div class="badge">
+                            <i class="fas fa-clock"></i>
+                            <span>Respuesta rápida</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Atención personalizada</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-star"></i>
+                            <span>+100 clientes satisfechos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Grid Interactivo -->
+        <section class="contact-grid-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Elige tu medio preferido</h2>
+                    <p>Selecciona cómo quieres contactarnos</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- WhatsApp -->
+                    <div class="contact-card whatsapp-card" data-contact="whatsapp">
+                        <div class="card-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp</h3>
+                        <p>Respuesta inmediata</p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>Respuesta en segundos</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7 disponible</span>
+                            </div>
+                        </div>
+                        <a href="https://wa.me/34624334958" class="contact-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Enviar mensaje
+                        </a>
+                    </div>
+
+                    <!-- Teléfono -->
+                    <div class="contact-card phone-card" data-contact="phone">
+                        <div class="card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Llamada directa</h3>
+                        <p>Atención personalizada</p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <i class="fas fa-user"></i>
+                                <span>Asesoramiento directo</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-headset"></i>
+                                <span>Soporte inmediato</span>
+                            </div>
+                        </div>
+                        <a href="tel:+34624334958" class="contact-btn">
+                            <i class="fas fa-phone"></i>
+                            Llamar ahora
+                        </a>
+                    </div>
+
+                    <!-- Instagram -->
+                    <div class="contact-card instagram-card" data-contact="instagram">
+                        <div class="card-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3>Instagram</h3>
+                        <p>Síguenos y descubre</p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <i class="fas fa-images"></i>
+                                <span>Fotos y videos</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-video"></i>
+                                <span>Reels y stories</span>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/autovilasecaismael?igsh=a2h3OWRzb3ZzMWNi" class="contact-btn" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                            Seguir en Instagram
+                        </a>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="contact-card email-card" data-contact="email">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>Respuesta en 24h</p>
+                        <div class="card-stats">
+                            <div class="stat">
+                                <i class="fas fa-file-alt"></i>
+                                <span>Documentación</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-paperclip"></i>
+                                <span>Archivos adjuntos</span>
+                            </div>
+                        </div>
+                        <a href="mailto:autoismaelsl@gmail.com" class="contact-btn">
+                            <i class="fas fa-envelope"></i>
+                            Enviar email
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Horarios Inteligentes -->
+        <section class="smart-schedule">
+            <div class="container">
+                <div class="schedule-container">
+                    <div class="schedule-header">
+                        <h2>Horarios de atención</h2>
+                        <div class="live-status">
+                            <div class="status-indicator" id="statusIndicator">
+                                <div class="pulse"></div>
+                                <span>Verificando...</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="schedule-cards">
+                        <div class="schedule-card today">
+                            <div class="day-header">
+                                <h3>Hoy</h3>
+                                <span class="date" id="todayDate"></span>
+                            </div>
+                            <div class="time-slots">
+                                <div class="time-slot morning">
+                                    <span class="period">Mañana</span>
+                                    <span class="hours">11:00 - 14:00</span>
+                                </div>
+                                <div class="time-slot afternoon">
+                                    <span class="period">Tarde</span>
+                                    <span class="hours">16:00 - 19:00</span>
+                                </div>
+                            </div>
+                            <div class="current-status" id="currentStatus">
+                                <i class="fas fa-sync fa-spin"></i>
+                                <span>Determinando estado...</span>
+                            </div>
+                        </div>
+
+                        <div class="schedule-card week">
+                            <h3>Semana laboral</h3>
+                            <div class="week-schedule">
+                                <div class="day-row">
+                                    <span class="day">Lunes - Viernes</span>
+                                    <span class="hours">11:00 - 20:00</span>
+                                </div>
+                                <div class="day-row">
+                                    <span class="day">Sábados</span>
+                                    <span class="hours">11:30 - 19:00</span>
+                                </div>
+                                <div class="day-row">
+                                    <span class="day">Domingos</span>
+                                    <span class="hours">12:00 - 18:00</span>
+                                </div>
+                                <div class="day-row weekend">
+                                    <span class="day">Festivos</span>
+                                    <span class="hours">12:00 - 17:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contacto Rápido -->
+        <section class="quick-contact">
+            <div class="container">
+                <div class="quick-contact-grid">
+                    <div class="quick-info">
+                        <h2>Contacto rápido</h2>
+                        <p>¿Tienes prisa? Usa estos accesos directos</p>
+                        
+                        <div class="quick-buttons">
+                            <a href="https://wa.me/34624334958?text=Hola, tengo interés en un vehículo del catálogo" 
+                               class="quick-btn whatsapp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="btn-content">
+                                    <span class="btn-title">WhatsApp Rápido</span>
+                                    <span class="btn-desc">Para información de vehículos</span>
+                                </div>
+                            </a>
+                            
+                            <a href="https://wa.me/34624334958?text=Hola, quiero vender mi coche" 
+                               class="quick-btn sell" target="_blank">
+                                <i class="fas fa-euro-sign"></i>
+                                <div class="btn-content">
+                                    <span class="btn-title">Vender mi coche</span>
+                                    <span class="btn-desc">Valoración gratuita</span>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+34624334958" class="quick-btn phone">
+                                <i class="fas fa-phone"></i>
+                                <div class="btn-content">
+                                    <span class="btn-title">Llamada urgente</span>
+                                    <span class="btn-desc">Atención inmediata</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="social-stream">
+                        <h3>Síguenos en Instagram</h3>
+                        <div class="instagram-preview">
+                            <div class="ig-placeholder">
+                                <i class="fab fa-instagram"></i>
+                                <p>Últimos vehículos y novedades</p>
+                                <a href="https://www.instagram.com/autovilasecaismael?igsh=a2h3OWRzb3ZzMWNi" 
+                                   class="ig-follow-btn" target="_blank">
+                                    Seguir @autovilasecaismael
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Interactiva -->
+        <section class="contact-faq">
+            <div class="container">
+                <h2>Preguntas frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Hacen pruebas de conducción?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, todas las pruebas de conducción son gratuitas y sin compromiso. Solo necesitas tu carnet de conducir en vigor.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Ofrecen financiación?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>En proceso, estudiaremos tu financiación sin compromiso. Contaremos con múltiples entidades colaboradoras.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Qué garantía incluyen?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Todos nuestros vehículos incluyen 12 meses de garantía de motor y caja.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h4>¿Hacen cambio de nombre?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, el cambio de nombre está incluido en el precio y nos encargamos de toda la tramitación.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Final -->
+        <section class="contact-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Aún tienes dudas?</h2>
+                    <p>No dudes en contactarnos, estamos aquí para ayudarte</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/34624334958" class="cta-btn primary" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Chatear por WhatsApp
+                        </a>
+                        <a href="tel:+34624334958" class="cta-btn secondary">
+                            <i class="fas fa-phone"></i>
+                            Llamar ahora mismo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                        <h3>Auto Vilaseca Ismael</h3>
+                    </div>
+                    <p class="footer-description">
+                        Tu concesionario de confianza en Vilaseca. Especialistas en coches de ocasión y seminuevos seleccionados. Calidad, garantía y el mejor servicio.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/34624334958" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/autovilasecaismael?igsh=a2h3OWRzb3ZzMWNi" class="social-link" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:+34624334958" class="social-link" title="Llamar">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto Directo</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visítanos</strong>
+                                <span>Carrer de Masricard, 14<br>43480 Vilaseca, Tarragona</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Llámanos</strong>
+                                <a href="tel:+34624334958">+34 624 33 49 58</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:autoismaelsl@gmail.com">autoismaelsl@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="catalogo.html"><i class="fas fa-chevron-right"></i> Catálogo completo</a></li>
+                        <li><a href="sobre-nosotros.html"><i class="fas fa-chevron-right"></i> Sobre Nosotros</a></li>
+                        <li><a href="ubicacion.html"><i class="fas fa-chevron-right"></i> Cómo llegar</a></li>
+                        <li><a href="contacto.html"><i class="fas fa-chevron-right"></i> Contactar</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horario de Atención</h3>
+                    <div class="hours-info">
+                        <div class="hour-item">
+                            <span>Lunes - Viernes</span>
+                            <span>11:00 - 20:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Sábados</span>
+                            <span>11:30 - 20:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Domingos</span>
+                            <span>11:30 - 18:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Festivos</span>
+                            <span>12:00 - 18:00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-cta">
+                        <a href="https://wa.me/34624334958" class="btn-primary small" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Contactar por WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2025 Auto Vilaseca Ismael. Todos los derechos reservados.</p>
+                    <div class="footer-legals">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34624334958" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+</html>

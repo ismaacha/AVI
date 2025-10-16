@@ -164,3 +164,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.log('🚀 Auto Vilaseca Ismael website loaded successfully!');
 });
+
