@@ -3,246 +3,512 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Volkswagen T-Roc 1.5 TSI - Auto Vilaseca Ismael</title>
+    <title>Volkswagen TROC 2.0 TDI 150 Sport - Auto Vilaseca Ismael</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/coche-detalle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="../imagenes/logo.webp" type="image/webp">
     
-    <meta name="description" content="Volkswagen T-Roc 1.5 TSI Style - Crossover compacto certificado. Precio incluye garantía y cambio de nombre.">
+    <meta name="description" content="Volkswagen TROC 2.0 TDI 150 Sport - 2020 - 190.000 km - Diésel - Automático DSG7 - 20.500€ - Garantía incluida">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header Premium -->
     <header class="header">
-        <!-- Mismo header -->
+        <div class="container">
+            <nav class="nav">
+                <a href="../index.html" class="logo">
+                    <img src="../imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                    <span class="logo-text">Auto Vilaseca Ismael</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="../pages/catalogo.html" class="nav-link">Catálogo</a></li>
+                    <li><a href="../pages/ubicacion.html" class="nav-link">Ubicación</a></li>
+                    <li><a href="../pages/sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
+                    <li><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
+                    <li><a href="../pages/vender-coche.html" class="btn-sell">
+                        <i class="fas fa-euro-sign"></i>
+                        Vender coche
+                    </a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <a href="tel:+34624334958" class="nav-phone">
+                        <i class="fas fa-phone"></i>
+                        <span>624 33 49 58</span>
+                    </a>
+                </div>
+                
+                <button class="nav-toggle" aria-label="Menú móvil">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <main class="car-detail-main">
-        <div class="car-detail-container">
+    <main class="coche-detalle-main">
+        <div class="container">
             <!-- Breadcrumb -->
-            <div class="breadcrumb">
-                <a href="../index.html">Inicio</a> 
-                <span>></span>
+            <nav class="breadcrumb">
+                <a href="../index.html">Inicio</a>
+                <i class="fas fa-chevron-right"></i>
                 <a href="../pages/catalogo.html">Catálogo</a>
-                <span>></span>
-                <span>Volkswagen T-Roc</span>
+                <i class="fas fa-chevron-right"></i>
+                <span>Volkswagen TROC</span>
+            </nav>
+
+            <!-- Header del Coche -->
+            <div class="coche-header">
+                <div class="coche-badges">
+                    <div class="badge stock">Disponible</div>
+                </div>
+                <h1>Volkswagen TROC 2.0 TDI</h1>
+                <p class="coche-subtitle">Sport - Automático DSG7 - 150 CV</p>
             </div>
 
-            <div class="car-detail-layout">
-                <!-- Gallery Section -->
-                <section class="car-gallery">
-                    <div class="main-image-container">
-                        <img id="main-image" src="../imagenes/coches/volkswagen-troc/1.jpg" alt="Volkswagen T-Roc" onerror="this.src='../imagenes/placeholder-car.jpg'">
+            <div class="coche-content">
+                <!-- Galería de Imágenes -->
+                <div class="coche-gallery">
+                    <div class="gallery-main">
+                        <img src="../imagenes/coches/volkswagen-troc/1.jpeg" alt="Volkswagen TROC frontal" id="mainImage" onerror="this.src='../imagenes/placeholder-car.jpg'">
                     </div>
-                    <div class="thumbnail-scroll">
-                        <div class="thumbnail active" data-full="../imagenes/coches/volkswagen-troc/1.jpg">
-                            <img src="../imagenes/coches/volkswagen-troc/1.jpg" alt="Vista frontal">
+                    <div class="gallery-thumbs">
+                        <div class="thumb active" data-image="../imagenes/coches/volkswagen-troc/1.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/1.jpeg" alt="Vista frontal" onerror="this.src='../imagenes/placeholder-car.jpg'">
                         </div>
-                        <div class="thumbnail" data-full="../imagenes/coches/volkswagen-troc/2.jpg">
-                            <img src="../imagenes/coches/volkswagen-troc/2.jpg" alt="Vista lateral">
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/2.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/2.jpeg" alt="Vista lateral" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/3.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/3.jpeg" alt="Vista trasera" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/4.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/4.jpeg" alt="Interior" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/5.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/5.jpeg" alt="Detalle salpicadero" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/6.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/6.jpeg" alt="Detalle volante" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/7.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/7.jpeg" alt="Maletero" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/8.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/8.jpeg" alt="Detalle llantas" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/9.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/9.jpeg" alt="Detalle faros" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/volkswagen-troc/10.jpeg">
+                            <img src="../imagenes/coches/volkswagen-troc/10.jpeg" alt="Detalle motor" onerror="this.src='../imagenes/placeholder-car.jpg'">
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <!-- Car Info Sidebar -->
-                <aside class="car-info-sidebar">
-                    <div class="car-badges">
-                        <div class="badge certified">🛡️ Certificado</div>
-                    </div>
-                    
-                    <h1 class="car-title">Volkswagen T-Roc</h1>
-                    <p class="car-subtitle">1.5 TSI Style DSG</p>
-                    
-                    <div class="car-price">20.500 €</div>
-                    
-                    <div class="price-includes">
-                        <strong>✅ Precio incluye:</strong> Garantía de 12 meses + cambio de nombre
-                    </div>
-                    
-                    <div class="car-quick-info">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-calendar"></i>
-                            </div>
-                            <div class="info-label">Año</div>
-                            <div class="info-value">2019</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-tachometer-alt"></i>
-                            </div>
-                            <div class="info-label">Kilómetros</div>
-                            <div class="info-value">85.000 km</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-gas-pump"></i>
-                            </div>
-                            <div class="info-label">Combustible</div>
-                            <div class="info-value">Gasolina</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-cog"></i>
-                            </div>
-                            <div class="info-label">Transmisión</div>
-                            <div class="info-value">Automático</div>
-                        </div>
+                <!-- Información Principal -->
+                <div class="coche-info">
+                    <div class="price-section">
+                        <div class="price">20.500 €</div>
+                        <div class="price-info">Incluye garantía 12 meses + cambio nombre</div>
+                        <!-- <div class="finance-info">
+                            <i class="fas fa-calculator"></i>
+                            <span>Financiación disponible desde 220€/mes</span>
+                        </div> -->
                     </div>
 
-                    <div class="car-actions">
-                        <a href="#" class="btn-whatsapp">
+                    <div class="quick-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="label">Año</span>
+                                <span class="value">2020</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div>
+                                <span class="label">Kilómetros</span>
+                                <span class="value">190.000 km</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-gas-pump"></i>
+                            <div>
+                                <span class="label">Combustible</span>
+                                <span class="value">Diésel</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <div>
+                                <span class="label">Transmisión</span>
+                                <span class="value">Automático DSG7</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-horse-head"></i>
+                            <div>
+                                <span class="label">Potencia</span>
+                                <span class="value">150 CV</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <span class="label">Versión</span>
+                                <span class="value">Sport</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="https://wa.me/34624334958?text=Hola, estoy interesado en el Volkswagen TROC de 20.500€" 
+                           class="btn-whatsapp" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             Contactar por WhatsApp
                         </a>
-                        
                         <a href="tel:+34624334958" class="btn-call">
                             <i class="fas fa-phone"></i>
-                            Llamar por teléfono
+                            Llamar ahora
                         </a>
-                        
-                        <a href="#" class="btn-share">
-                            <i class="fas fa-share-alt"></i>
-                            Compartir vehículo
-                        </a>
+                        <!-- <button class="btn-finance">
+                            <i class="fas fa-calculator"></i>
+                            Solicitar financiación
+                        </button> -->
                     </div>
-                </aside>
+
+                    <div class="features-highlights">
+                        <h3>Equipamiento Destacado</h3>
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Versión Sport</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Motor 2.0 TDI 150 CV</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Cambio automático DSG7</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Pantalla táctil 8"</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Control de crucero</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Climatizador automático</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Sensores de aparcamiento</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Llantas aleación 18"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Specifications Section -->
-            <section class="specifications-section">
-                <h2 class="section-title">Especificaciones Técnicas</h2>
+            <!-- Especificaciones Técnicas -->
+            <section class="specs-section">
+                <h2>Especificaciones Técnicas</h2>
                 <div class="specs-grid">
-                    <div class="spec-group">
-                        <h4>Motor y Transmisión</h4>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <span class="spec-label">Motor</span>
-                                <span class="spec-value">1.5 TSI</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Potencia</span>
-                                <span class="spec-value">150 CV</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Par motor</span>
-                                <span class="spec-value">250 Nm</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Transmisión</span>
-                                <span class="spec-value">DSG 7 velocidades</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Tracción</span>
-                                <span class="spec-value">Delantera</span>
-                            </li>
+                    <div class="specs-group">
+                        <h3>Motor</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Cilindrada</span>
+                            <span class="spec-value">2.0 L</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Potencia</span>
+                            <span class="spec-value">150 CV</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Par motor</span>
+                            <span class="spec-value">340 Nm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Combustible</span>
+                            <span class="spec-value">Diésel</span>
+                        </div>
+                    </div>
+
+                    <div class="specs-group">
+                        <h3>Dimensiones</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Puertas</span>
+                            <span class="spec-value">5 puertas</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Plazas</span>
+                            <span class="spec-value">5 plazas</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Longitud</span>
+                            <span class="spec-value">4.234 mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Maletero</span>
+                            <span class="spec-value">445 L</span>
+                        </div>
+                    </div>
+
+                    <div class="specs-group">
+                        <h3>Transmisión</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Tipo</span>
+                            <span class="spec-value">Automático DSG7</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Marchas</span>
+                            <span class="spec-value">7 velocidades</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">0-100 km/h</span>
+                            <span class="spec-value">8.9 s</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Velocidad máx.</span>
+                            <span class="spec-value">198 km/h</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Equipamiento Completo -->
+            <section class="equipment-section">
+                <h2>Equipamiento Completo</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>Exterior</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Llantas aleación 18"</li>
+                            <li><i class="fas fa-check"></i> Faros LED</li>
+                            <li><i class="fas fa-check"></i> Luces de circulación diurna LED</li>
+                            <li><i class="fas fa-check"></i> Espejos eléctricos plegables</li>
+                            <li><i class="fas fa-check"></i> Barras de techo</li>
+                            <li><i class="fas fa-check"></i> Luneta térmica</li>
                         </ul>
                     </div>
 
-                    <div class="spec-group">
-                        <h4>Rendimiento</h4>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <span class="spec-label">0-100 km/h</span>
-                                <span class="spec-value">8.4 segundos</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Velocidad máxima</span>
-                                <span class="spec-value">210 km/h</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Consumo combinado</span>
-                                <span class="spec-value">5.0 L/100km</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Emisiones CO2</span>
-                                <span class="spec-value">114 g/km</span>
-                            </li>
+                    <div class="equipment-category">
+                        <h3>Interior</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Tapicería deportiva</li>
+                            <li><i class="fas fa-check"></i> Volante multifunción</li>
+                            <li><i class="fas fa-check"></i> Pantalla táctil 8"</li>
+                            <li><i class="fas fa-check"></i> Android Auto / Apple CarPlay</li>
+                            <li><i class="fas fa-check"></i> Climatizador automático</li>
+                            <li><i class="fas fa-check"></i> Asientos regulables en altura</li>
                         </ul>
                     </div>
 
-                    <div class="spec-group">
-                        <h4>Dimensiones</h4>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <span class="spec-label">Longitud</span>
-                                <span class="spec-value">4.23 metros</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Anchura</span>
-                                <span class="spec-value">1.82 metros</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Altura</span>
-                                <span class="spec-value">1.57 metros</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Maletero</span>
-                                <span class="spec-value">445 litros</span>
-                            </li>
+                    <div class="equipment-category">
+                        <h3>Seguridad</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> 6 airbags</li>
+                            <li><i class="fas fa-check"></i> Control de estabilidad ESP</li>
+                            <li><i class="fas fa-check"></i> Control de tracción</li>
+                            <li><i class="fas fa-check"></i> ABS con EBD</li>
+                            <li><i class="fas fa-check"></i> Sensor de presión de neumáticos</li>
+                            <li><i class="fas fa-check"></i> Isofix en plazas traseras</li>
+                        </ul>
+                    </div>
+
+                    <div class="equipment-category">
+                        <h3>Conducción</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Cambio automático DSG7</li>
+                            <li><i class="fas fa-check"></i> Control de crucero</li>
+                            <li><i class="fas fa-check"></i> Limitador de velocidad</li>
+                            <li><i class="fas fa-check"></i> Modos de conducción</li>
+                            <li><i class="fas fa-check"></i> Start/Stop</li>
+                            <li><i class="fas fa-check"></i> Asistente de arranque en pendiente</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Equipment Section -->
-            <section class="equipment-section">
-                <h2 class="section-title">Equipamiento</h2>
-                <div class="equipment-grid">
-                    <div class="equipment-item">
-                        <i class="fas fa-paint-roller"></i>
-                        <span>Acabado Style</span>
+            <!-- Garantía y Servicios -->
+            <section class="warranty-section">
+                <h2>Servicios Incluidos</h2>
+                <div class="warranty-grid">
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>12 Meses de Garantía</h3>
+                        <p>Cobertura completa en motor, transmisión y sistemas eléctricos</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-tachometer-alt"></i>
-                        <span>Cuadro digital</span>
+
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Cambio de Aceite y Filtros</h3>
+                        <p>Cambio ya hecho y revisado, listo para disfrutar</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-temperature-low"></i>
-                        <span>Climatizador automático</span>
+
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Cambio de Nombre Incluido</h3>
+                        <p>Gestionamos toda la documentación sin coste adicional</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Sistema de navegación</span>
+
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h3>Prueba de Conducción</h3>
+                        <p>Prueba el vehículo sin compromiso con tu carnet de conducir</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-bluetooth"></i>
-                        <span>Apple CarPlay/Android Auto</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Faros LED</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-parking"></i>
-                        <span>Sensores de aparcamiento</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-camera"></i>
-                        <span>Cámara de marcha atrás</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-wheelchair"></i>
-                        <span>Asientos calefactados</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-bolt"></i>
-                        <span>Keyless Entry</span>
+                </div>
+            </section>
+
+            <!-- CTA Final -->
+            <section class="cta-detalle">
+                <div class="cta-content">
+                    <h2>¿Te gusta este Volkswagen TROC?</h2>
+                    <p>Contacta con nosotros para más información o prueba de conducción</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/34624334958?text=Hola, quiero más información del Volkswagen TROC" 
+                           class="btn-primary large" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar información
+                        </a>
+                        <a href="tel:+34624334958" class="btn-secondary large">
+                            <i class="fas fa-phone"></i>
+                            Llamar ahora
+                        </a>
+                        <a href="../pages/catalogo.html" class="btn-outline large">
+                            <i class="fas fa-car"></i>
+                            Ver más coches
+                        </a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
 
-    <!-- Modal y Footer -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-
     <footer class="footer">
-        <!-- Mismo footer -->
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="../imagenes/logo.webp" alt="Auto Vilaseca Ismael">
+                        <h3>Auto Vilaseca Ismael</h3>
+                    </div>
+                    <p class="footer-description">
+                        Tu concesionario de confianza en Vilaseca. Especialistas en coches de ocasión y seminuevos seleccionados. Calidad, garantía y el mejor servicio.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://wa.me/34624334958" class="social-link" target="_blank" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="#" class="social-link" title="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/autovilasecaismael?igsh=a2h3OWRzb3ZzMWNi" class="social-link" target="_blank" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="tel:+34624334958" class="social-link" title="Llamar">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contacto Directo</h3>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <strong>Visítanos</strong>
+                                <span>Carrer de Masricard, 14<br>43480 Vilaseca, Tarragona</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <strong>Llámanos</strong>
+                                <a href="tel:+34624334958">+34 624 33 49 58</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <a href="mailto:autoismaelsl@gmail.com">autoismaelsl@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul class="footer-links">
+                        <li><a href="../index.html"><i class="fas fa-chevron-right"></i> Inicio</a></li>
+                        <li><a href="../pages/catalogo.html"><i class="fas fa-chevron-right"></i> Catálogo completo</a></li>
+                        <li><a href="../pages/ubicacion.html"><i class="fas fa-chevron-right"></i> Cómo llegar</a></li>
+                        <li><a href="../pages/contacto.html"><i class="fas fa-chevron-right"></i> Contactar</a></li>
+                        <li><a href="../pages/vender-coche.html"><i class="fas fa-chevron-right"></i> Vender mi coche</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Horario de Atención</h3>
+                    <div class="hours-info">
+                        <div class="hour-item">
+                            <span>Lunes - Viernes</span>
+                            <span>11:00 - 20:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Sábados</span>
+                            <span>11:30 - 20:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Domingos</span>
+                            <span>11:30 - 18:00</span>
+                        </div>
+                        <div class="hour-item">
+                            <span>Festivos</span>
+                            <span>12:00 - 18:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <p>&copy; 2024 Auto Vilaseca Ismael. Todos los derechos reservados.</p>
+                    <div class="footer-legals">
+                        <a href="#">Política de Privacidad</a>
+                        <a href="#">Términos y Condiciones</a>
+                        <a href="#">Aviso Legal</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/34624334958" class="whatsapp-float" target="_blank" title="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="../js/main.js"></script>
     <script src="../js/coche-detalle.js"></script>

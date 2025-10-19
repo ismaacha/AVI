@@ -9,9 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="../imagenes/logo.webp" type="image/webp">
     
-    <meta name="description" content="Audi SQ5 3.0 TDI Quattro 2014 Negro - 172.000 km - Vehículo premium certificado. Precio incluye garantía y cambio de nombre.">
+    <meta name="description" content="Audi SQ5 3.0 TDI Quattro S tronic - 2014 - 172.000 km - Diésel - Automático - 22.900€ - Garantía incluida">
 </head>
 <body>
+    <!-- Header Premium -->
     <header class="header">
         <div class="container">
             <nav class="nav">
@@ -24,6 +25,7 @@
                     <li><a href="../index.html" class="nav-link">Inicio</a></li>
                     <li><a href="../pages/catalogo.html" class="nav-link">Catálogo</a></li>
                     <li><a href="../pages/ubicacion.html" class="nav-link">Ubicación</a></li>
+                    <li><a href="../pages/sobre-nosotros.html" class="nav-link">Sobre Nosotros</a></li>
                     <li><a href="../pages/contacto.html" class="nav-link">Contacto</a></li>
                     <li><a href="../pages/vender-coche.html" class="btn-sell">
                         <i class="fas fa-euro-sign"></i>
@@ -47,244 +49,361 @@
         </div>
     </header>
 
-    <main class="car-detail-main">
-        <div class="car-detail-container">
+    <main class="coche-detalle-main">
+        <div class="container">
             <!-- Breadcrumb -->
-            <div class="breadcrumb">
-                <a href="../index.html">Inicio</a> 
-                <span>></span>
+            <nav class="breadcrumb">
+                <a href="../index.html">Inicio</a>
+                <i class="fas fa-chevron-right"></i>
                 <a href="../pages/catalogo.html">Catálogo</a>
-                <span>></span>
-                <span>Audi SQ5 3.0 TDI Quattro</span>
+                <i class="fas fa-chevron-right"></i>
+                <span>Audi SQ5</span>
+            </nav>
+
+            <!-- Header del Coche -->
+            <div class="coche-header">
+                <div class="coche-badges">
+                    <div class="badge featured">⭐ Destacado</div>
+                    <div class="badge stock">Disponible</div>
+                </div>
+                <h1>Audi SQ5 3.0 TDI Quattro</h1>
+                <p class="coche-subtitle">S tronic - Premium Plus - Full Equipo</p>
             </div>
 
-            <div class="car-detail-layout">
-                <!-- Gallery Section -->
-                <section class="car-gallery">
-                    <div class="main-image-container">
-                        <img id="main-image" src="../imagenes/coches/audi-sq5/1.jpeg" alt="Audi SQ5 3.0 TDI Quattro Negro" onerror="this.src='../imagenes/placeholder-car.jpg'">
+            <div class="coche-content">
+                <!-- Galería de Imágenes -->
+                <div class="coche-gallery">
+                    <div class="gallery-main">
+                        <img src="../imagenes/coches/audi-sq5/1.jpeg" alt="Audi SQ5 frontal" id="mainImage" onerror="this.src='../imagenes/placeholder-car.jpg'">
                     </div>
-                    <div class="thumbnail-scroll">
-                        <div class="thumbnail active" data-full="../imagenes/coches/audi-sq5/1.jpeg">
-                            <img src="../imagenes/coches/audi-sq5/1.jpeg" alt="Vista frontal">
+                    <div class="gallery-thumbs">
+                        <div class="thumb active" data-image="../imagenes/coches/audi-sq5/1.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/1.jpeg" alt="Vista frontal" onerror="this.src='../imagenes/placeholder-car.jpg'">
                         </div>
-                        <div class="thumbnail" data-full="../imagenes/coches/audi-sq5/2.jpeg">
-                            <img src="../imagenes/coches/audi-sq5/2.jpeg" alt="Vista lateral">
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/2.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/2.jpeg" alt="Vista lateral" onerror="this.src='../imagenes/placeholder-car.jpg'">
                         </div>
-                        <div class="thumbnail" data-full="../imagenes/coches/audi-sq5/3.jpeg">
-                            <img src="../imagenes/coches/audi-sq5/3.jpeg" alt="Interior">
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/3.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/3.jpeg" alt="Vista trasera" onerror="this.src='../imagenes/placeholder-car.jpg'">
                         </div>
-                        <div class="thumbnail" data-full="../imagenes/coches/audi-sq5/4.jpeg">
-                            <img src="../imagenes/coches/audi-sq5/4.jpeg" alt="Detalle motor">
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/4.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/4.jpeg" alt="Interior" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/5.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/5.jpeg" alt="Salpicadero" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/6.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/6.jpeg" alt="Motor" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/7.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/7.jpeg" alt="Maletero" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/8.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/8.jpeg" alt="Detalle llantas" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/9.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/9.jpeg" alt="Detalle faros" onerror="this.src='../imagenes/placeholder-car.jpg'">
+                        </div>
+                        <div class="thumb" data-image="../imagenes/coches/audi-sq5/10.jpeg">
+                            <img src="../imagenes/coches/audi-sq5/10.jpeg" alt="Detalle volante" onerror="this.src='../imagenes/placeholder-car.jpg'">
                         </div>
                     </div>
-                </section>
+                </div>
 
-                <!-- Car Info Sidebar -->
-                <aside class="car-info-sidebar">
-                    <div class="car-badges">
-                        <div class="badge featured">⭐ Destacado</div>
-                        <div class="badge certified">🛡️ Certificado</div>
-                    </div><br>
-                    
-                    <h1 class="car-title">Audi SQ5</h1>
-                    <p class="car-subtitle">3.0 TDI Quattro S tronic</p>
-                    
-                    <div class="car-price">22.900 €</div>
-                    
-                    <div class="price-includes">
-                        <strong>✅ Precio incluye:</strong> Garantía de 12 meses + cambio de nombre
-                    </div>
-                    
-                    <div class="car-quick-info">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-calendar"></i>
-                            </div>
-                            <div class="info-label">Año</div>
-                            <div class="info-value">2014</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-tachometer-alt"></i>
-                            </div>
-                            <div class="info-label">Kilómetros</div>
-                            <div class="info-value">172.000 km</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-gas-pump"></i>
-                            </div>
-                            <div class="info-label">Combustible</div>
-                            <div class="info-value">Diésel</div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-cog"></i>
-                            </div>
-                            <div class="info-label">Transmisión</div>
-                            <div class="info-value">Automático</div>
-                        </div>
+                <!-- Información Principal -->
+                <div class="coche-info">
+                    <div class="price-section">
+                        <div class="price">22.900 €</div>
+                        <div class="price-info">Incluye garantía 12 meses + cambio nombre</div>
+                        <!--<div class="finance-info">
+                            <i class="fas fa-calculator"></i>
+                            <span>Financiación disponible desde 250€/mes</span>
+                        </div> -->
                     </div>
 
-                    <div class="car-actions">
-                        <a href="#" class="btn-whatsapp">
+                    <div class="quick-details">
+                        <div class="detail-item">
+                            <i class="fas fa-calendar"></i>
+                            <div>
+                                <span class="label">Año</span>
+                                <span class="value">2014</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <div>
+                                <span class="label">Kilómetros</span>
+                                <span class="value">172.000 km</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-gas-pump"></i>
+                            <div>
+                                <span class="label">Combustible</span>
+                                <span class="value">Diésel</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-cog"></i>
+                            <div>
+                                <span class="label">Transmisión</span>
+                                <span class="value">Automático (S tronic)</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-car"></i>
+                            <div>
+                                <span class="label">Tracción</span>
+                                <span class="value">4x4 (Quattro)</span>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i class="fas fa-palette"></i>
+                            <div>
+                                <span class="label">Color</span>
+                                <span class="value">Negro</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons">
+                        <a href="https://wa.me/34624334958?text=Hola, estoy interesado en el Audi SQ5 de 22.900€" 
+                           class="btn-whatsapp" target="_blank">
                             <i class="fab fa-whatsapp"></i>
                             Contactar por WhatsApp
                         </a>
-                        
                         <a href="tel:+34624334958" class="btn-call">
                             <i class="fas fa-phone"></i>
-                            Llamar por teléfono
+                            Llamar ahora
                         </a>
-                        
-                        <a href="#" class="btn-share">
-                            <i class="fas fa-share-alt"></i>
-                            Compartir vehículo
-                        </a>
+                        <!--<button class="btn-finance">
+                            <i class="fas fa-calculator"></i>
+                            Solicitar financiación
+                        </button>-->
                     </div>
-                </aside>
+
+                    <div class="features-highlights">
+                        <h3>Equipamiento Destacado</h3>
+                        <div class="features-grid">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Motor 3.0 TDI Biturbo</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Tracción Quattro</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Cambio S tronic</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>MMI Navigation Plus</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Asientos deportivos</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Llantas 21"</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Faros Matrix LED</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Techo panorámico</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Specifications Section -->
-            <section class="specifications-section">
-                <h2 class="section-title">Especificaciones Técnicas</h2>
+            <!-- Especificaciones Técnicas -->
+            <section class="specs-section">
+                <h2>Especificaciones Técnicas</h2>
                 <div class="specs-grid">
-                    <div class="spec-group">
-                        <h4>Motor y Transmisión</h4>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <span class="spec-label">Motor</span>
-                                <span class="spec-value">3.0 TDI V6 Biturbo</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Potencia</span>
-                                <span class="spec-value">313 CV / 230 kW</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Par motor</span>
-                                <span class="spec-value">650 Nm</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Transmisión</span>
-                                <span class="spec-value">S tronic 8 velocidades</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Tracción</span>
-                                <span class="spec-value">Quattro permanente</span>
-                            </li>
+                    <div class="specs-group">
+                        <h3>Motor</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Cilindrada</span>
+                            <span class="spec-value">3.0 L</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Potencia</span>
+                            <span class="spec-value">313 CV</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Par motor</span>
+                            <span class="spec-value">650 Nm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Combustible</span>
+                            <span class="spec-value">Diésel</span>
+                        </div>
+                    </div>
+
+                    <div class="specs-group">
+                        <h3>Rendimiento</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">0-100 km/h</span>
+                            <span class="spec-value">5.1 s</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Velocidad máxima</span>
+                            <span class="spec-value">250 km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Consumo combinado</span>
+                            <span class="spec-value">6.6 L/100km</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Emisiones CO2</span>
+                            <span class="spec-value">174 g/km</span>
+                        </div>
+                    </div>
+
+                    <div class="specs-group">
+                        <h3>Dimensiones</h3>
+                        <div class="spec-item">
+                            <span class="spec-label">Longitud</span>
+                            <span class="spec-value">4.646 mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Anchura</span>
+                            <span class="spec-value">1.914 mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Altura</span>
+                            <span class="spec-value">1.635 mm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-label">Maletero</span>
+                            <span class="spec-value">540 L</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Equipamiento Completo -->
+            <section class="equipment-section">
+                <h2>Equipamiento Completo</h2>
+                <div class="equipment-grid">
+                    <div class="equipment-category">
+                        <h3>Exterior</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Llantas aleación 21"</li>
+                            <li><i class="fas fa-check"></i> Faros Matrix LED</li>
+                            <li><i class="fas fa-check"></i> Luces de circulación diurna LED</li>
+                            <li><i class="fas fa-check"></i> Espejos con memoria</li>
+                            <li><i class="fas fa-check"></i> Barras de techo</li>
+                            <li><i class="fas fa-check"></i> Techo panorámico</li>
                         </ul>
                     </div>
 
-                    <div class="spec-group">
-                        <h4>Rendimiento</h4>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <span class="spec-label">0-100 km/h</span>
-                                <span class="spec-value">5.1 segundos</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Velocidad máxima</span>
-                                <span class="spec-value">250 km/h</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Consumo combinado</span>
-                                <span class="spec-value">6.6 L/100km</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Emisiones CO2</span>
-                                <span class="spec-value">172 g/km</span>
-                            </li>
+                    <div class="equipment-category">
+                        <h3>Interior</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Tapicería de cuero</li>
+                            <li><i class="fas fa-check"></i> Asientos deportivos con calefacción</li>
+                            <li><i class="fas fa-check"></i> Volante multifunción deportivo</li>
+                            <li><i class="fas fa-check"></i> MMI Navigation Plus</li>
+                            <li><i class="fas fa-check"></i> BOSE Surround Sound</li>
+                            <li><i class="fas fa-check"></i> Control de clima 4 zonas</li>
                         </ul>
                     </div>
 
-                    <div class="spec-group">
-                        <h4>Dimensiones</h4>
-                        <ul class="spec-list">
-                            <li class="spec-item">
-                                <span class="spec-label">Longitud</span>
-                                <span class="spec-value">4.64 metros</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Anchura</span>
-                                <span class="spec-value">1.91 metros</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Altura</span>
-                                <span class="spec-value">1.62 metros</span>
-                            </li>
-                            <li class="spec-item">
-                                <span class="spec-label">Maletero</span>
-                                <span class="spec-value">540 litros</span>
-                            </li>
+                    <div class="equipment-category">
+                        <h3>Seguridad</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Asistente de aparcamiento plus</li>
+                            <li><i class="fas fa-check"></i> Cámara de visión 360º</li>
+                            <li><i class="fas fa-check"></i> Control de crucero adaptativo</li>
+                            <li><i class="fas fa-check"></i> Asistente de mantenimiento de carril</li>
+                            <li><i class="fas fa-check"></i> Sistema de frenado de emergencia</li>
+                            <li><i class="fas fa-check"></i> 8 airbags</li>
+                        </ul>
+                    </div>
+
+                    <div class="equipment-category">
+                        <h3>Conducción</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Tracción Quattro permanente</li>
+                            <li><i class="fas fa-check"></i> Cambio S tronic 8 velocidades</li>
+                            <li><i class="fas fa-check"></i> Audi Drive Select</li>
+                            <li><i class="fas fa-check"></i> Diferencial sport</li>
+                            <li><i class="fas fa-check"></i> Start/Stop</li>
+                            <li><i class="fas fa-check"></i> Suspensión deportiva</li>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <!-- Equipment Section -->
-            <section class="equipment-section">
-                <h2 class="section-title">Equipamiento y Extras</h2>
-                <div class="equipment-grid">
-                    <div class="equipment-item">
-                        <i class="fas fa-sun"></i>
-                        <span>Techo panorámico solar</span>
+            <!-- Garantía y Servicios -->
+            <section class="warranty-section">
+                <h2>Garantía y Servicios Incluidos</h2>
+                <div class="warranty-grid">
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>12 Meses de Garantía</h3>
+                        <p>Cobertura completa en motor, transmisión y sistemas eléctricos</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-leather"></i>
-                        <span>Tapicería de cuero Nappa</span>
+
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <h3>Revisión de 150 Puntos</h3>
+                        <p>Inspección completa mecánica y de carrocería certificada</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-temperature-low"></i>
-                        <span>Climatizador 4 zonas</span>
+
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-file-contract"></i>
+                        </div>
+                        <h3>Cambio de Nombre Incluido</h3>
+                        <p>Gestionamos toda la documentación sin coste adicional</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-camera"></i>
-                        <span>Cámara de visión 360º</span>
+
+                    <div class="warranty-card">
+                        <div class="warranty-icon">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <h3>Prueba de Conducción</h3>
+                        <p>Prueba el vehículo sin compromiso con tu carnet de conducir</p>
                     </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-parking"></i>
-                        <span>Park Assist con cámaras</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Navegador MMI Touch</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Asistente de carril activo</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-lightbulb"></i>
-                        <span>Faros Matrix LED</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-volume-up"></i>
-                        <span>Sistema Bang & Olufsen</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-wheelchair"></i>
-                        <span>Asientos deportivos calefactados</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-bolt"></i>
-                        <span>Keyless Entry & Go</span>
-                    </div>
-                    <div class="equipment-item">
-                        <i class="fas fa-car"></i>
-                        <span>Suspensión deportiva adaptativa</span>
+                </div>
+            </section>
+
+            <!-- CTA Final -->
+            <section class="cta-detalle">
+                <div class="cta-content">
+                    <h2>¿Te gusta este Audi SQ5?</h2>
+                    <p>Contacta con nosotros para más información, prueba de conducción o financiación</p>
+                    <div class="cta-buttons">
+                        <a href="https://wa.me/34624334958?text=Hola, quiero más información del Audi SQ5" 
+                           class="btn-primary large" target="_blank">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar información
+                        </a>
+                        <a href="tel:+34624334958" class="btn-secondary large">
+                            <i class="fas fa-phone"></i>
+                            Llamar ahora
+                        </a>
+                        <a href="../pages/catalogo.html" class="btn-outline large">
+                            <i class="fas fa-car"></i>
+                            Ver más coches
+                        </a>
                     </div>
                 </div>
             </section>
         </div>
     </main>
-
-    <!-- Modal para imagen grande -->
-    <div id="imageModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="modalImage">
-    </div>
-    <br>
 
     <footer class="footer">
         <div class="container">
@@ -304,7 +423,7 @@
                         <a href="#" class="social-link" title="Facebook">
                             <i class="fab fa-facebook-f"></i>
                         </a>
-                        <a href="#" class="social-link" title="Instagram">
+                        <a href="https://www.instagram.com/autovilasecaismael?igsh=a2h3OWRzb3ZzMWNi" class="social-link" target="_blank" title="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <a href="tel:+34624334958" class="social-link" title="Llamar">
@@ -356,23 +475,20 @@
                     <div class="hours-info">
                         <div class="hour-item">
                             <span>Lunes - Viernes</span>
-                            <span>9:00 - 19:00</span>
+                            <span>11:00 - 20:00</span>
                         </div>
                         <div class="hour-item">
                             <span>Sábados</span>
-                            <span>10:00 - 14:00</span>
+                            <span>11:30 - 20:00</span>
                         </div>
                         <div class="hour-item">
                             <span>Domingos</span>
-                            <span>Cerrado</span>
+                            <span>11:30 - 18:00</span>
                         </div>
-                    </div>
-                    
-                    <div class="footer-cta">
-                        <a href="../pages/contacto.html" class="btn-primary small">
-                            <i class="fas fa-calendar"></i>
-                            Pedir cita
-                        </a>
+                        <div class="hour-item">
+                            <span>Festivos</span>
+                            <span>12:00 - 18:00</span>
+                        </div>
                     </div>
                 </div>
             </div>
