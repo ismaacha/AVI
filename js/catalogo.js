@@ -143,7 +143,8 @@ document.addEventListener('DOMContentLoaded', function() {
             transmision: 'Manual',
             price: 14000,
             image: '../imagenes/coches/opel-movano/1.jpeg',
-            link: '../coches/opel-movano.html'
+            link: '../coches/opel-movano.html',
+            sold: true
         },
         {
             id: 12,
@@ -415,7 +416,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         vehiclesGrid.innerHTML = vehiclesToShow.map(vehicle => `
             <div class="car-card" data-id="${vehicle.id}">
-                <!-- BADGES REMOVED -->
+                ${vehicle.sold ? '<div class="sold-badge">Vendido</div>' : ''}
                 
                 <div class="car-image-container">
                     <img src="${vehicle.image}" alt="${vehicle.title}" class="car-image" onerror="this.src='../imagenes/placeholder-car.jpg'">
