@@ -130,7 +130,8 @@ document.addEventListener('DOMContentLoaded', function() {
             transmision: 'Automático',
             price: 2250,
             image: '../imagenes/coches/citroen-c3-2004/1.jpeg',
-            link: '../coches/citroen-c3.html'
+            link: '../coches/citroen-c3.html',
+            sold: true
         },
         {
             id: 11,
@@ -170,7 +171,9 @@ document.addEventListener('DOMContentLoaded', function() {
             transmision: 'Manual',
             price: 11500,
             image: '../imagenes/coches/fiat-ducato/1.jpeg',
-            link: '../coches/fiat-ducato.html'
+            link: '../coches/fiat-ducato.html',
+            sold: true
+
         },
         {
             id: 14,
@@ -183,7 +186,8 @@ document.addEventListener('DOMContentLoaded', function() {
             transmision: 'Manual',
             price: 10000,
             image: '../imagenes/coches/volkswagen-touran/1.jpeg',
-            link: '../coches/volkswagen-touran.html'
+            link: '../coches/volkswagen-touran.html',
+            sold: true
         }
     ];
 
